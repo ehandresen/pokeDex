@@ -1,10 +1,10 @@
-import PokemonCard from './components/PokemonCard';
+import PokemonList from './components/pokemonList/PokemonList';
 
 function App() {
 
   return (
     <>
-      <PokemonCard />
+      <PokemonList/>
     </>
   )
 }
