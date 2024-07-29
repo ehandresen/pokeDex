@@ -1,8 +1,56 @@
-.container {
+.card {
     width: 200px;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 14px;
     color: white;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 60%;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+#id {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.788);
+    font-weight: 400;
+}
+
+#type {
+    margin-bottom: 5px;
+    padding: 5px 12px;
+    border-radius: 18px;
+    width: fit-content;
+    color: black;
+}
+
+#type.grass {
+    background-color: #00d112;
+}
+
+#type.fire {
+    background-color: #e12b3d;
+}
+
+#type.water {
+    background-color: #2fb6ff;
+}
+
+#type.bug {
+    background-color: #eaa51d;
+}
+
+#type.normal {
+    background-color: #ece8e7;
 }
 
 #grass {

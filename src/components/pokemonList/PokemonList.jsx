@@ -28,10 +28,10 @@ const PokemonList = () => {
     }
 
     return (
-        <ol>{pokemonList.map((pokemon, i) => (
+        <div className='container'>{pokemonList.map((pokemon, i) => (
             <PokemonCard key={i} pokemon={pokemon} />)
         )}
-        </ol>
+        </div>
     )
 }
 
