@@ -1,31 +1,29 @@
 import './PokemonList.css';
 import axios from 'axios';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const PokemonList = () => {
+    const [pokemonList, setPokemonList] = useState([]);
 
-    // useEffect(()=>{
-    //     getPokemons();
+    useEffect(()=>{
+        getPokemons();
 
-    // }, [])
+    }, [])
 
     const getPokemons = async () => {
-        const list = [];
 
-        for (let i = 1; i < 150; i++) {
+        const list = [];
+        for (let i = 1; i <= 151; i++) {
 
             const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`);
-            console.log(pokemon.data.name);           
-            list.push(pokemon);            
+            const name = pokemon.data.name;
+            list.push(name);   
         }
-        console.log('list' + list);
+        setPokemonList(list);
     }
 
-
-    getPokemons();
-
     return (
-        <>pokemonlist</>
+        <ol>{pokemonList.map((pokemon, i) => <li key={i}>{pokemon}</li>)}</ol>
     )
 }
 
