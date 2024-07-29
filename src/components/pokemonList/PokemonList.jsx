@@ -10,16 +10,13 @@ const PokemonList = () => {
     // }, [])
 
     const getPokemons = async () => {
-
         const list = [];
-
 
         for (let i = 1; i < 150; i++) {
 
             const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`);
             console.log(pokemon.data.name);           
-            list.push(pokemon);
-            
+            list.push(pokemon);            
         }
         console.log('list' + list);
     }
