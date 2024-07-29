@@ -1,7 +1,26 @@
 .container {
-    background-color: #FF0A23;
     width: 200px;
     padding: 10px;
     border-radius: 8px;
     color: white;
+}
+
+#grass {
+background: #03bd13;
+}
+
+#fire {
+background: #FF0A23;
+}
+
+#water {
+background: #00A6FF;
+}
+
+#bug {
+background: #DE9400;
+}
+
+#normal {
+background: #DED4D1;
 }
