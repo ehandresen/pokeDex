@@ -4,16 +4,28 @@ import { useEffect } from 'react';
 
 const PokemonList = () => {
 
-    useEffect(()=>{
+    // useEffect(()=>{
+    //     getPokemons();
 
-        const getPokemon = async () => {
+    // }, [])
 
-            const ditto = await axios.get('https://pokeapi.co/api/v2/pokemon/1');
-            console.log(ditto.data.name);
+    const getPokemons = async () => {
+
+        const list = [];
+
+
+        for (let i = 1; i < 150; i++) {
+
+            const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`);
+            console.log(pokemon.data.name);           
+            list.push(pokemon);
+            
         }
-        getPokemon();
+        console.log('list' + list);
+    }
 
-    }, [])
+
+    getPokemons();
 
     return (
         <>pokemonlist</>
