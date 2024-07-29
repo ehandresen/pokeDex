@@ -1,4 +1,5 @@
 import PokemonList from './components/pokemonList/PokemonList';
+import './App.css';
 
 function App() {
 
