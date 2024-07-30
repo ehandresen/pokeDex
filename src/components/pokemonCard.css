@@ -50,9 +50,14 @@ h4 {
 }
 
 #type.normal {
-    background-color: #ece8e7;
+    background-color: #f2eae7;
 }
 
+#poison {
+    background: #b50aff
+}
+
+/* Card background color */
 #grass {
 background: #03bd13;
 }
@@ -71,4 +76,8 @@ background: #DE9400;
 
 #normal {
 background: #DED4D1;
+}
+
+#poison {
+    background: #b50aff
 }
