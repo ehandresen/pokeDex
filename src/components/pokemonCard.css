@@ -1,26 +1,44 @@
 :root {
 
-        --color-normal: '#A8A77A';
-        --color-fire: '#EE8130';
-        --color-water: '#6390F0';
-        --color-electric: '#F7D02C';
-        --color-grass: '#7AC74C';
-        --color-ice: '#96D9D6';
-        --color-fighting: '#C22E28';
-        --color-poison: '#A33EA1';
-        --color-ground: '#E2BF65';
-        --color-lying: '#A98FF3';
-        --color-psychic: '#F95587';
-        --color-bug: '#A6B91A';
-        --color-rock: '#B6A136';
-        --color-ghost: '#735797';
-        --color-dragon: '#6F35FC';
-        --color-dark: '#705746';
-        --color-steel: '#B7B7CE';
-        --color-fairy: '#D685AD';
+    --color-normal: #A8A77A;
+    --color-fire: #EE8130;
+    --color-water: #6390F0;
+    --color-electric: #F7D02C;
+    --color-grass: #7AC74C;
+    --color-ice: #96D9D6;
+    --color-fighting: #C22E28;
+    --color-poison: #A33EA1;
+    --color-ground: #E2BF65;
+    --color-flying: #A98FF3;
+    --color-psychic: #F95587;
+    --color-bug: #A6B91A;
+    --color-rock: #B6A136;
+    --color-ghost: #735797;
+    --color-dragon: #6F35FC;
+    --color-dark: #705746;
+    --color-steel: #B7B7CE;
+    --color-fairy: #D685AD;
+
+    /* Lighter shades */
+    --color-normal-light: #C2C8A4;
+    --color-fire-light: #F5A35B;
+    --color-water-light: #8FB6F9;
+    --color-electric-light: #F9E94E;
+    --color-grass-light: #9CD57A;
+    --color-ice-light: #B3E0DD;
+    --color-fighting-light: #D55C5E;
+    --color-poison-light: #B75BCC;
+    --color-ground-light: #E8D58F;
+    --color-flying-light: #B3A8F5;
+    --color-psychic-light: #F8A2A8;
+    --color-bug-light: #BDC731;
+    --color-rock-light: #D1B84D;
+    --color-ghost-light: #8A6F9C;
+    --color-dragon-light: #8D5CF8;
+    --color-dark-light: #8B6B59;
+    --color-steel-light: #C2C2D0;
+    --color-fairy-light: #E2A4B9;
 }
-
-
 
 .card {
     width: 200px;
@@ -59,62 +77,122 @@ h4 {
 
 /* Type color at bottom of card */
 #type.grass {
-    background-color: #00d112;
+    background-color: var(--color-grass-light);
 }
 
 #type.fire {
-    background-color: #e12b3d;
+    background-color: var(--color-fire-light);
 }
 
 #type.water {
-    background-color: #2fb6ff;
+    background-color: var(--color-water-light);
 }
 
 #type.bug {
-    background-color: #eaa51d;
+    background-color: var(--color-bug-light);
 }
 
 #type.normal {
-    background-color: #f2eae7;
+    background-color: var(--color-normal-light);
 }
 
 #type.poison {
-    background: #cc5bfd
+    background-color: var(--color-poison-light);
 }
 
 #type.electric {
-    background: rgb(255, 237, 75);
+    background-color: var(--color-electric-light);
+}
+
+#type.ground {
+    background: var(--color-ground-light);
+}
+
+#type.fairy {
+    background: var(--color-fairy-light);
+}
+
+#type.fighting {
+    background: var(--color-fighting-light);
+}
+
+#type.psychic {
+    background: var(--color-psychic-light);
+}
+
+#type.rock {
+    background: var(--color-rock-light);
+}
+
+#type.ghost {
+    background: var(--color-ghost-light);
+}
+
+#type.ice {
+    background: var(--color-ice-light);
+}
+
+#type.dragon {
+    background: var(--color-dragon-light);
 }
 
 /* Card background color */
 #grass {
-background: #03bd13;
+    background: var(--color-grass);
 }
 
 #fire {
-background: #FF0A23;
+    background: var(--color-fire);
 }
 
 #water {
-background: #00A6FF;
+    background: var(--color-water);
 }
 
 #bug {
-background: #DE9400;
+    background: var(--color-bug);
 }
 
 #normal {
-background: #DED4D1;
+    background: var(--color-normal);
 }
 
 #poison {
-    background: #b50aff
+    background: var(--color-poison);
 }
 
 #electric {
-    background: rgb(255, 230, 0);
+    background: var(--color-electric);
 }
 
 #ground {
-    background: dark
+    background: var(--color-ground);
+}
+
+#fairy {
+    background: var(--color-fairy)
+}
+
+#fighting {
+    background: var(--color-fighting);
+}
+
+#psychic {
+    background: var(--color-psychic);
+}
+
+#rock {
+    background: var(--color-rock);
+}
+
+#ghost {
+    background: var(--color-ghost);
+}
+
+#ice {
+    background: var(--color-ice);
+}
+
+#dragon {
+    background: var(--color-dragon);
 }
