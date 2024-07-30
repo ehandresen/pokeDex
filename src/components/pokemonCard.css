@@ -1,3 +1,27 @@
+:root {
+
+        --color-normal: '#A8A77A';
+        --color-fire: '#EE8130';
+        --color-water: '#6390F0';
+        --color-electric: '#F7D02C';
+        --color-grass: '#7AC74C';
+        --color-ice: '#96D9D6';
+        --color-fighting: '#C22E28';
+        --color-poison: '#A33EA1';
+        --color-ground: '#E2BF65';
+        --color-lying: '#A98FF3';
+        --color-psychic: '#F95587';
+        --color-bug: '#A6B91A';
+        --color-rock: '#B6A136';
+        --color-ghost: '#735797';
+        --color-dragon: '#6F35FC';
+        --color-dark: '#705746';
+        --color-steel: '#B7B7CE';
+        --color-fairy: '#D685AD';
+}
+
+
+
 .card {
     width: 200px;
     padding: 10px;
@@ -33,6 +57,7 @@ h4 {
     color: black;
 }
 
+/* Type color at bottom of card */
 #type.grass {
     background-color: #00d112;
 }
@@ -53,8 +78,12 @@ h4 {
     background-color: #f2eae7;
 }
 
-#poison {
-    background: #b50aff
+#type.poison {
+    background: #cc5bfd
+}
+
+#type.electric {
+    background: rgb(255, 237, 75);
 }
 
 /* Card background color */
@@ -80,4 +109,12 @@ background: #DED4D1;
 
 #poison {
     background: #b50aff
+}
+
+#electric {
+    background: rgb(255, 230, 0);
+}
+
+#ground {
+    background: dark
 }
